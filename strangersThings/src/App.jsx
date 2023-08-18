@@ -1,17 +1,12 @@
 import { useState } from 'react'
+import Posts from './components/posts'
 
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <div>
-
-      </div>
+      <Posts />
     </>
-  )
+  );
 }
 
-export default App
+
