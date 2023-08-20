@@ -28,8 +28,16 @@ function App() {
         </Routes>
 
       </div>
+
+import Posts from './components/posts'
+
+export default function App() {
+  return (
+    <>
+      <Posts />
+
     </>
-  )
+  );
 }
 
-export default App
+
