@@ -26,8 +26,8 @@
   body {
     margin: 0;
     display: flex;
-    place-items: center;
-    min-width: 320px;
+    /* place-items: center; */
+    min-width: 100vw; 
     min-height: 100vh;
   }
   
@@ -67,4 +67,25 @@
       background-color: #f9f9f9;
     }
   }
+
+  .navbarcontainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .post-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
   
+  .post-card {
+    flex-basis: 300px;
+    border: 2px solid black;
+    padding-left: 10px;
+    border-radius: 5px;
+  }

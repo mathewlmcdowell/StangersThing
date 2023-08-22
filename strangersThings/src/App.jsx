@@ -1,30 +1,25 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Posts from './components/Posts'
-import Profile from './components/Profile'
-import CreatePost from './components/CreatePost'
+import { Routes, Route, Link } from 'react-router-dom'
+import Posts from './Components/Posts'
+import Profile from './Components/Profile'
+import CreatePosts from './Components/CreatePosts'
+import NavBar from './Components/NavBar'
+import Register from './Components/Register'
 
-import './App.css'
+
+// import './App.css'
 
 function App() {
 
   return (
     <>
-      <h1>Stranger's Things</h1>
-      <div id="container">
-        <div id="navbar">
-          <Link to='/'>Home</Link>
-          <Link to='/login'>Login</Link>
-          <Link to="/posts/new">Add A Post</Link>
-          <Link to="/posts">See All Post</Link>
-
-        </div>
-      </ div>
+     <NavBar />
       <div>
         <Routes>
           <Route path='/' element={<Profile />} />
           <Route path='/posts' element={<Posts />} />
-          <Route path='/posts/new' element={<CreatePost />} />
+          <Route path='/posts/new' element={<CreatePosts />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
 
       </div>
