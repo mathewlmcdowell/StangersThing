@@ -12,7 +12,7 @@ import Register from './Components/Register'
 function App() {
 
   return (
-    <>
+    <div>
      <NavBar />
       <div>
         <Routes>
@@ -21,18 +21,17 @@ function App() {
           <Route path='/posts/new' element={<CreatePosts />} />
           <Route path='/register' element={<Register />} />
         </Routes>
-
       </div>
+      </div>
+    )
 
-import Posts from './components/posts'
-
-export default function App() {
+function App() {
   return (
-    <>
+    <div>
       <Posts />
+    </div>
 
-    </>
+
+
   );
-}
-
-
+}};
