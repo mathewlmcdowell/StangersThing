@@ -27,7 +27,7 @@ export default function Posts() {
     console.log("Posts: ", posts)
 
   return (
-    <div>
+    <div className="outline">
       <h1>Post Component</h1>
       <div className="post-container">
         {posts.length > 0 && 
