@@ -87,7 +87,7 @@ export default function Register() {
     }
 
     return (
-        <div>Register
+        <div className='outline'>Register
             <form onSubmit={handleSubmit}>
                 <input type="text" name="Username" id="Username" placeholder='username' min="6" value={user.username} onChange={handleChange} /> <br />
                 <input type="text" name="Password1" id="Password1" placeholder='password' min="8" required value={user.password1} onChange={handleChange} /> <br />
