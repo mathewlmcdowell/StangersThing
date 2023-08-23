@@ -5,9 +5,8 @@ import Profile from './components/Profile'
 import CreatePosts from './components/CreatePosts'
 import NavBar from './components/NavBar'
 import Register from './components/Register'
+import './index.css'
 
-
-// import './App.css'
 
 export default function App() {
 
