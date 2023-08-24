@@ -7,11 +7,12 @@ export default function NavBar() {
             <h1>Stranger's Things</h1>
             
                 <div>
-                    <Link to='/'>Home</Link>
-                    <Link to="/register">Register</Link>
-                    <Link to='/login'>Login</Link>
-                    <Link to="/posts/new">Add A Post</Link>
-                    <Link to="/posts">See All Post</Link>
+                    <Link style={{display: "inline-block", paddingRight: "5px"}} to='/'>Home</Link>
+                    <Link style={{display: "inline-block", paddingRight: "5px"}} to="/register">Register</Link>
+                    <Link style={{display: "inline-block", paddingRight: "5px"}} to='/login'>Login</Link>
+                    <Link style={{display: "inline-block", paddingRight: "5px"}} to="/posts/new">Add A Post</Link>
+                    <Link style={{display: "inline-block", paddingRight: "5px"}} to="/posts">See All Post</Link>
+                    <Link style={{display: "inline-block", paddingRight: "5px"}} to='/logout'>Logout</Link>
 
                 </div>
             
