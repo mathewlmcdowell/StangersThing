@@ -4,7 +4,7 @@ import Logout from './Logout'
 
 export default function Profile() {
   return (
-    <div>
+    <div className='outline'>
         <h1>Profile</h1>
         <Login />
         <Logout />
