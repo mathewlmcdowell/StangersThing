@@ -28,9 +28,9 @@ export default function Posts() {
   console.log("Posts: ", posts)
 
   return (
-      <h1>Posts</h1>
 
     <div className="outline">
+            <h2>Posts</h2>
       <div className="post-container">
         {posts.length > 0 &&
           posts.map((post) => {

@@ -79,7 +79,8 @@ export default function CreatePosts() {
 
     if (token) {
         return (
-            <div>CreatePosts
+            <div className='outline'>
+                <h2>CreatePosts</h2>
                 <form onSubmit={handleSubmit}>
                     <input onChange={handleChange} type="text" name="title" id="title" value={post.title} placeholder="Title" />
                     <textarea onChange={handleChange} name="description" id="description" value={post.description} placeholder="Description" rows={4} cols={50}></textarea>

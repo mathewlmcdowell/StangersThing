@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import Posts from './Components/Posts'
-import Profile from './Components/Profile'
-import CreatePosts from './Components/CreatePosts'
-import NavBar from './Components/NavBar'
-import Register from './Components/Register'
-import Login from './Components/Login'
-import Logout from './Components/Logout'
-
+import Posts from './components/Posts'
+import Profile from './components/Profile'
+import CreatePosts from './components/CreatePosts'
+import NavBar from './components/NavBar'
+import Register from './components/Register'
+import Login from './components/Login'
+import Logout from './components/Logout'
+import './index.css'
 
 // import './App.css'
 
