@@ -19,7 +19,7 @@ export default function Logout() {
     
     
   return (
-    <div>
+    <div className='outline'>
         
     </div>
   )

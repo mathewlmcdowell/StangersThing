@@ -3,18 +3,18 @@ import { Link } from "react-router-dom"
 
 export default function NavBar() {
     return (
-        <div className='navbarcontainer'>
-            <h1>Stranger's Things</h1>
-            
-                <div>
-                    <Link style={{display: "inline-block", paddingRight: "5px"}} to='/'>Home</Link>
-                    <Link style={{display: "inline-block", paddingRight: "5px"}} to="/register">Register</Link>
-                    <Link style={{display: "inline-block", paddingRight: "5px"}} to='/login'>Login</Link>
-                    <Link style={{display: "inline-block", paddingRight: "5px"}} to="/posts/new">Add A Post</Link>
-                    <Link style={{display: "inline-block", paddingRight: "5px"}} to="/posts">See All Post</Link>
-                    <Link style={{display: "inline-block", paddingRight: "5px"}} to='/logout'>Logout</Link>
-
+        <div className='contain outline'>
+            <h1 className='title'>Stranger's Things</h1>
+                <div className='links'>
+                    
+                    <Link to='/' className='link-styles'>Home</Link>
+                    <Link to="/register" className='link-styles'>Register</Link>
+                    <Link to='/login' className='link-styles'>Login</Link>
+                    <Link to="/posts/new" className='link-styles'>Add A Post</Link>
+                    <Link to="/posts" className='link-styles'>See All Post</Link>
+                    
                 </div>
+
             
         </div>
     )

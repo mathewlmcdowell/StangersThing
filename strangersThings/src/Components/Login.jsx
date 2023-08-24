@@ -68,7 +68,8 @@ export default function Login() {
     }
 
   return (
-    <div>Login
+    <div className='outline'>
+      <h2>Login</h2>
         <form onSubmit={handleSubmit}>
                 <input type="text" name="Username" id="Username" placeholder='username' min="6" value={user.username} onChange={handleChange} /> <br />
                 <input type="password" name="Password" id="Password" placeholder='password' min="8" required value={user.password} onChange={handleChange} /> <br />
