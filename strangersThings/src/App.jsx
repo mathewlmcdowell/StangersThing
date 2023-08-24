@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import Posts from './components/Posts'
-import Profile from './components/Profile'
-import CreatePosts from './components/CreatePosts'
-import NavBar from './components/NavBar'
-import Register from './components/Register'
-import './index.css'
+import Posts from './Components/Posts'
+import Profile from './Components/Profile'
+import CreatePosts from './Components/CreatePosts'
+import NavBar from './Components/NavBar'
+import Register from './Components/Register'
+import Login from './Components/Login'
+import Logout from './Components/Logout'
 
 
-export default function App() {
+// import './App.css'
+
+function App() {
 
   return (
-    <div>
+    <>
      <NavBar />
       <div>
         <Routes>
@@ -19,9 +22,14 @@ export default function App() {
           <Route path='/posts' element={<Posts />} />
           <Route path='/posts/new' element={<CreatePosts />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/logout' element={<Logout />} />
         </Routes>
-      </div>
-      </div>
-    )
 
-  };
+      </div>
+    </>
+  )
+}
+
+export default App
+

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 // import { preview } from 'vite'
 
 const BASE_URL = "https://strangers-things.herokuapp.com/api/2305-FTB-ET-WEB-PT"
@@ -9,7 +10,7 @@ export default function Register() {
         password2: "",
     })
 
-
+const navigate = useNavigate()
 
     const handleChange = (e) => {
         let name = e.target.name;
@@ -83,11 +84,12 @@ export default function Register() {
         .then((result) => {
             console.log("my result", result)
             sessionStorage.setItem("token", JSON.stringify(result.data.token))
+            navigate("/posts/new")
         })
     }
 
     return (
-        <div className='outline'>Register
+        <div>Register
             <form onSubmit={handleSubmit}>
                 <input type="text" name="Username" id="Username" placeholder='username' min="6" value={user.username} onChange={handleChange} /> <br />
                 <input type="text" name="Password1" id="Password1" placeholder='password' min="8" required value={user.password1} onChange={handleChange} /> <br />
@@ -98,3 +100,4 @@ export default function Register() {
 
     )
 }
+
