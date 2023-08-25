@@ -86,14 +86,16 @@ button:focus-visible {
 
 .post-card {
   flex-basis: 300px;
-  border: 2px solid #97bd9ea2;
+  border: 2px solid #0b0b18;
   padding-left: 10px;
   border-radius: 5px;
   padding: 1rem;
   margin: 1rem;
   max-height: 20rem;
   min-height: 20rem;
-  background-color: #6ab9782d;
+  background-color: #0b0e16a2;
+  overflow-y: clip;
+  font-size: small;
 
 }
 
@@ -103,12 +105,13 @@ button:focus-visible {
   flex-direction: row;
   font-size:large;
   margin-left: auto;
+  text-align: center;
 }
 
 .link-styles {
   padding: 0 2rem;
-  background-color: #c4e4caa2;
-  border: #d1e7d5 solid;
+  background-color: #0b0e16a2;
+  border: #0b0b18 solid;
 }
 
 .contain {
@@ -116,11 +119,6 @@ button:focus-visible {
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  background: linear-gradient(
-    to left,
-    #d1e7d5 50%,
-    #fffdf8 50%
-  );
 
 }
 
@@ -145,9 +143,14 @@ padding: 0;
 margin: 0;
 width: 100%;
 height: 100%;
-background: linear-gradient(
-  to right,
-  #d1e7d5 50%,
-  #fffdf8 50%
-);
+background-image: url(./components/PaintedBackground.jpg);
+}
+
+.center {
+  align-content: center;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }

@@ -79,7 +79,7 @@ export default function CreatePosts() {
 
     if (token) {
         return (
-            <div className='outline'>
+            <div className='outline center'>
                 <h2>CreatePosts</h2>
                 <form onSubmit={handleSubmit}>
                     <input onChange={handleChange} type="text" name="title" id="title" value={post.title} placeholder="Title" />

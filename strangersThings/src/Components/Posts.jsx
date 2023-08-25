@@ -29,7 +29,7 @@ export default function Posts() {
 
   return (
 
-    <div className="outline">
+    <div className="outline center">
             <h2>Posts</h2>
       <div className="post-container">
         {posts.length > 0 &&
