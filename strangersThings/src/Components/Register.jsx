@@ -89,7 +89,7 @@ const navigate = useNavigate()
     }
 
     return (
-        <div className='outline'>
+        <div className='outline center'>
             <h2>Register</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="Username" id="Username" placeholder='username' min="6" value={user.username} onChange={handleChange} /> <br />

@@ -52,7 +52,7 @@ export default function Login() {
               console.log(result);
               if (result.success) {
                 sessionStorage.setItem("token", result.data.token);
-                navigate("/posts/new");
+                navigate("/posts");
               } else {
                 alert ("Login information not correct")
               }
@@ -68,7 +68,7 @@ export default function Login() {
     }
 
   return (
-    <div className='outline'>
+    <div className='outline center'>
       <h2>Login</h2>
         <form onSubmit={handleSubmit}>
                 <input type="text" name="Username" id="Username" placeholder='username' min="6" value={user.username} onChange={handleChange} /> <br />
