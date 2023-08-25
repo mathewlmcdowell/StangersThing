@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import Register from './components/Register'
 import Login from './components/Login'
 import Logout from './components/Logout'
+import Home from './components/Home'
 import './index.css'
 
 // import './App.css'
@@ -18,7 +19,8 @@ function App() {
      <NavBar />
       <div>
         <Routes>
-          <Route path='/' element={<Profile />} />
+          <Route path ='/' element={<Home />} />
+          <Route path='/profile' element={<Profile />} />
           <Route path='/posts' element={<Posts />} />
           <Route path='/posts/new' element={<CreatePosts />} />
           <Route path='/register' element={<Register />} />
