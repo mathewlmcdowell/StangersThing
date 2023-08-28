@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from "react-router-dom"
-
+import Login from './Login.jsx'
 
 
 export default function NavBar() {
@@ -13,8 +13,8 @@ export default function NavBar() {
                 <Link to='/login' className='link-styles2'>Login</Link>
             </div>
             <div>
-                <Link to='/logout' className='link-styles2'>Logout</Link>
                 <Link to='/Profile' className='link-styles2'>Profile</Link>
+                <Link to='/logout' className='link-styles2'>Logout</Link>
             </div>
 
                 <h1 className='title'>Stranger's Things</h1>
