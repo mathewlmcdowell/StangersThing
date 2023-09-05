@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import Posts from './components/Posts'
+import Posts from './Components/Posts'
 import Profile from './components/Profile'
 import CreatePosts from './components/CreatePosts'
 import NavBar from './components/NavBar'
